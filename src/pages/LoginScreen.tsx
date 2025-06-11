@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { useAuth } from '@/contexts/AuthContext';
 import { toast } from '@/hooks/use-toast';
-import { Heart, Loader2 } from 'lucide-react';
+import { Plus, Loader2 } from 'lucide-react';
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
@@ -34,11 +34,11 @@ const LoginScreen = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-blue-25 to-white flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4">
       <Card className="w-full max-w-md animate-fade-in shadow-xl border-0">
         <CardHeader className="text-center pb-8">
           <div className="mx-auto w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 animate-bounce-in">
-            <Heart className="w-8 h-8 text-white" />
+            <Plus className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-2xl font-bold text-gray-800">Neighborhood Health</h1>
           <p className="text-gray-600">Welcome back! Please sign in to your account.</p>
