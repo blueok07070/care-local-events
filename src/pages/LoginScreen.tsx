@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -7,7 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { useAuth } from '@/contexts/AuthContext';
 import { toast } from '@/hooks/use-toast';
-import { Plus, Loader2 } from 'lucide-react';
+import { Cross, Loader2 } from 'lucide-react';
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
@@ -38,7 +37,7 @@ const LoginScreen = () => {
       <Card className="w-full max-w-md animate-fade-in shadow-xl border-0">
         <CardHeader className="text-center pb-8">
           <div className="mx-auto w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 animate-bounce-in">
-            <Plus className="w-8 h-8 text-white" />
+            <Cross className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-2xl font-bold text-gray-800">Neighborhood Health</h1>
           <p className="text-gray-600">Welcome back! Please sign in to your account.</p>
